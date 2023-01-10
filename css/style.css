@@ -1,0 +1,116 @@
+/*
+font-weight:
+Устанавливает насыщенность шрифта.
+100 - thin
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+900 - black
+*/
+
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext ");
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html {
+	font-size: 16px; 
+	color: #fff;
+	background-color: #333;
+}
+body {
+	font-family: "Poppins", sans-serif; 
+	line-height: 1;
+}
+/* ------------------------------ */
+
+.header__nav {
+	text-align: center;
+	text-decoration: underline;
+	color: rgba(0, 128, 0, 0.5);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 1px;
+}
+.page__image {
+	text-align: center;
+}
+
+.page__title {
+	text-align: center;
+	font-size: 36px;
+	color: #008000;
+	text-decoration: overline;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-shadow: 5px 3px 1px #fff;
+}
+.page__text {
+	text-align: justify;
+	font-size: 12px;
+	line-height: 140%;
+	letter-spacing: 5px;
+	font-family: "Gilroy";
+}
+.page__subtitle {
+	text-indent: 50px;
+}
+
+.page__text span {
+	font-weight: 700;
+	color: #008000;
+	font-size: 18px;
+}
